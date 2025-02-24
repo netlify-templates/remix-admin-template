@@ -115,27 +115,12 @@ export default function LogIn() {
             type="password"
             placeholder="password"
           />
-          <div className="flex flex-wrap justify-between gap-4">
-            <div className="flex items-center">
-              <input
-                id="remember"
-                type="checkbox"
-                className="absolute w-8 h-8 opacity-0 appearance-none select-none peer"
-              />
-              <label
-                htmlFor="remember"
-                className="text-sm tracking-wide relative pl-8 cursor-pointer before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-center before:w-6 before:h-6 before:text-white before:font-bold before:border before:border-slate-200 before:rounded-sm before:content-[''] peer-checked:before:content-['\2713'] peer-checked:before:bg-cyan-500 peer-checked:before:border-cyan-500"
-              >
-                Remember me
-              </label>
-            </div>
-            <Link
-              to="/reset-password"
-              className="block text-sm tracking-wide underline text-cyan-600"
+          <Link
+            to="/reset-password"
+            className="block text-sm tracking-wide underline text-cyan-600"
             >
-              Forgot password?
-            </Link>
-          </div>
+            Forgot password?
+          </Link>
           <Button
             type="submit"
             size="large"
@@ -144,7 +129,6 @@ export default function LogIn() {
           >
             Login
           </Button>
-
           <p className="text-sm text-center">
             New on Remix Dashboard?{" "}
             <Link className="underline text-cyan-600" to="/signup">

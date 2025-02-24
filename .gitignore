@@ -9,5 +9,8 @@ node_modules
 
 .DS_Store
 
+# Supabase
+supabase/.temp
+
 # netlify
 .netlify

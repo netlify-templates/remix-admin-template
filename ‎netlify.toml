@@ -5,3 +5,6 @@ publish = "build/client"
 [dev]
 command = "npm run dev"
 framework = "vite"
+
+[template]
+  required-extensions = ["supabase"]

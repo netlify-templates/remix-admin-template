@@ -9,13 +9,18 @@ import CloseIcon from "./icons/Close";
 const NAV_ITEMS = [
   {
     id: 1,
-    label: "Home Page",
+    label: "Member List",
     href: "/",
   },
   {
+    id: 1,
+    label: "New Member",
+    href: "/dashboard/new",
+  },
+  {
     id: 2,
-    label: "Log In",
-    href: "/login",
+    label: "Member Details",
+    href: "/dashboard/14c8afd0-50cc-4aca-9547-c997ed306065",
   },
   {
     id: 3,
@@ -28,9 +33,14 @@ const NAV_ITEMS = [
     href: "/signup",
   },
   {
+    id: 4,
+    label: "Logout",
+    href: "/logout",
+  },
+  {
     id: 5,
-    label: "Remix on Netlify",
-    href: "/",
+    label: "Docs: Remix on Netlify",
+    href: "https://docs.netlify.com/frameworks/remix/",
   },
 ];
 
