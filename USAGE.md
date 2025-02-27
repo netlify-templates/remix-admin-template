@@ -67,6 +67,14 @@ Now that the extension is configured, we can deploy the site again. Got to **Dep
 
 ![Supabase Netlify extension configuration](/public/guides/deploy-button.png)
 
-Once the build is complete, navigate to your production URL and you should see the **members** that we just added to the database.
+Once the build is complete, navigate to your production URL, and you should see the login form.
+
+![Template login form](/public/guides/remix-login.png)
+
+Next, add an authenticated user to log in to the template. In your Supabase project, navigate to **Authentication** (1), choose **Add user** (2), and provide an email and password (Email: demo@example.com, Password: demo123).
+
+![Add user in the Supabase Authentication](/public/guides/remix-supabase-add-user.png)
+
+Once you've completed this process, return to the login form and log in to the template. You should see the <strong>members</strong> that we just added to the database.
 
 ![Template with data](/public/guides/remix-dashboard.png)

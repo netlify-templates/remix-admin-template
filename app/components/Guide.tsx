@@ -121,10 +121,12 @@ export default function Guide() {
           alt="Supabase Netlify extension configuration"
         />
         <p>
-          Once the build is complete, navigate to your production URL and you
-          should see the <strong>members</strong> that we just added to the
-          database.
+          Once the build is complete, navigate to your production URL, and you should see the login form.
         </p>
+        <img src="/guides/remix-login.png" alt="Template login form" />
+        <p>Next, add an authenticated user to log in to the template. In your Supabase project, navigate to <strong>Authentication</strong> (1), choose <strong>Add user</strong> (2), and provide an email and password (Email: demo@example.com, Password: demo123).</p>
+        <img src="/guides/remix-supabase-add-user.png" alt="Add user to Supabase" />
+        <p>Once you&apos;ve completed this process, return to the login form and log in to the template. You should see the <strong>members</strong> that we just added to the database.</p>
         <img src="/guides/remix-dashboard.png" alt="Template with data" />
       </div>
     </article>
