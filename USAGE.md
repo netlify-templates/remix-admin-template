@@ -67,6 +67,6 @@ Now that the extension is configured, we can deploy the site again. Got to **Dep
 
 ![Supabase Netlify extension configuration](/public/guides/deploy-button.png)
 
-Once the build is complete, navigate to your production URL and you should see the **frameworks** that we just added to the database.
+Once the build is complete, navigate to your production URL and you should see the **members** that we just added to the database.
 
 ![Template with data](/public/guides/remix-dashboard.png)
