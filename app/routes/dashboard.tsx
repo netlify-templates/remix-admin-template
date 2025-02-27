@@ -43,6 +43,14 @@ export default function Dashboard() {
       <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
       <main className="py-8 grow md:ml-70 md:py-16">
         <div className="px-4 mx-auto max-w-7xl">
+          <div className="flex gap-3 p-3 mb-8 rounded-md shadow-sm bg-rose-50 text-rose-700">
+            <div className="flex items-center justify-center w-5 h-5 font-serif text-white rounded-full bg-rose-500">
+              !
+            </div>
+            <p className="text-sm">
+              This is a view-only environment. You cannot <strong>add</strong>, <strong>edit</strong>, or <strong>delete</strong> items. These restrictions are in place to prevent misuse.
+            </p>
+          </div>
           <Outlet />
         </div>
       </main>
