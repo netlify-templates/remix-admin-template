@@ -11,7 +11,7 @@ In this guide we’re going to install and configure the Supabase Netlify extens
 
 Once the database is provisioned, we can create the **members** table. From your project dashboard, open the SQL editor.
 
-![Create the members table](/public/images/guides/supabase-netlify-sql-editor.png)
+![Create the members table](/public/guides/supabase-netlify-sql-editor.png)
 
 Run the following commands in the SQL editor to create the **members** table.
 
