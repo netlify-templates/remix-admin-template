@@ -47,8 +47,7 @@ export default function Guide() {
           <li>
             After signing up to your Supabase account, click New project from
             your dashboard. Select your organization, give the project a name,
-            generate a new password for the database, and select the us-east-1
-            region.
+            generate a new password for the database, and select the region  (e.g. &quot;East US (North Virginia)&quot;).
           </li>
         </ol>
         <h2>Create the members table</h2>
@@ -102,8 +101,7 @@ export default function Guide() {
         <p>
           Once you&apos;ve completed this process, return to the Supabase
           section of your site configuration, and choose the project you just
-          created in Supabase. And make sure to choose Astro for the framework
-          since the template is built with Astro.
+          created in Supabase. Make sure to choose <strong>Other</strong> in the &quot;Where will you use Supabase?&quot; dropdown field.
         </p>
         <img
           src="/guides/supabase-netlify-extension-configuration.png"

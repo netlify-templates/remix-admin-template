@@ -57,7 +57,7 @@ After the extension is installed, navigate to the Supabase template site that yo
 
 ![Configure the Supabase extension](/public/guides/supabase-netlify-connect-oauth.png)
 
-Once you’ve completed this process, return to the Supabase section of your site configuration, and choose the project you just created in Supabase. And make sure to choose Astro for the framework since the template is built with Astro.
+Once you’ve completed this process, return to the Supabase section of your site configuration, and choose the project you just created in Supabase. Make sure to choose **Other** in the "Where will you use Supabase?" dropdown field..
 
 ![Supabase Netlify extension configuration](/public/guides/supabase-netlify-extension-configuration.png)
 
