@@ -36,7 +36,10 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
+        <script src="https://dev6.spaceo.in/project/mrsweb_staging/dynamic-form/embed-form"></script>
+         <div class="dynamic-form-frame" data-slug="636e6ce7-7feb-432d-9a26-c5aff50001d4"></div>
       </body>
+      
     </html>
   );
 }
