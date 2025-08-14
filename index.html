@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ADITYA_AF_SMM Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+    h1 { text-align: center; }
+    .service-list { max-width: 700px; margin: auto; }
+    .service {
+      background: white;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .service-info {
+      font-size: 18px;
+    }
+    button.buy-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button.buy-btn:hover {
+      background-color: #0056b3;
+    }
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>ADITYA_AF_SMM Services</h1>
+
+  <h2>Facebook Services</h2>
+  <div class="service-list">
+    <div class="service">
+      <div class="service-info">5,000 Followers – ₹300</div>
+      <button class="buy-btn" onclick="buyService('Facebook 5,000 Followers', 300)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">50,000 Post Reel Like's – ₹666</div>
+      <button class="buy-btn" onclick="buyService('Facebook 50,000 Post Reel Likes', 666)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">50,000 Reels Views – ₹446</div>
+      <button class="buy-btn" onclick="buyService('Facebook 50,000 Reels Views', 446)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">Life Time Blue Tick – ₹889</div>
+      <button class="buy-btn" onclick="buyService('Facebook Life Time Blue Tick', 889)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">4,000 Watch Time – ₹6,006</div>
+      <button class="buy-btn" onclick="buyService('Facebook 4,000 Watch Time', 6006)">Buy</button>
+    </div>
+  </div>
+
+  <h2>YouTube Services</h2>
+  <div class="service-list">
+    <div class="service">
+      <div class="service-info">6,700 Subscribers – ₹776</div>
+      <button class="buy-btn" onclick="buyService('YouTube 6,700 Subscribers', 776)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">50,000 Like's – ₹556</div>
+      <button class="buy-btn" onclick="buyService('YouTube 50,000 Likes', 556)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">100,000 Views – ₹996</div>
+      <button class="buy-btn" onclick="buyService('YouTube 100,000 Views', 996)">Buy</button>
+    </div>
+  </div>
+
+  <h2>Instagram Services</h2>
+  <div class="service-list">
+    <div class="service">
+      <div class="service-info">7,290 Followers – ₹776</div>
+      <button class="buy-btn" onclick="buyService('Instagram 7,290 Followers', 776)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">59,000 Post Reel Likes – ₹876</div>
+      <button class="buy-btn" onclick="buyService('Instagram 59,000 Post Reel Likes', 876)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">54,000 Video Views – ₹346</div>
+      <button class="buy-btn" onclick="buyService('Instagram 54,000 Video Views', 346)">Buy</button>
+    </div>
+    <div class="service">
+      <div class="service-info">5,480 Followers – ₹866</div>
+      <button class="buy-btn" onclick="buyService('Instagram 5,480 Followers', 866)">Buy</button>
+    </div>
+  </div>
+
+  <script>
+    function buyService(name, price) {
+      localStorage.setItem('selectedServiceName', name);
+      localStorage.setItem('selectedServicePrice', price);
+      window.location.href = 'order.html';
+    }
+  </script>
+</body>
+</html>

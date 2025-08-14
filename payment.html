@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment - ADITYA_AF_SMM</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; background: #f5f5f5; }
+    .payment-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      max-width: 400px;
+    }
+    h2 { margin-bottom: 20px; }
+    img.qr {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      border: 2px solid #ccc;
+    }
+    .info { margin: 15px 0; font-size: 16px; }
+    button {
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover { background-color: #218838; }
+  </style>
+</head>
+<body>
+  <div class="payment-box">
+    <h2>Payment Scanner</h2>
+    <img src="qr.png" alt="QR Code" class="qr" />
+    <div class="info" id="order-details"></div>
+    <button onclick="confirmPayment()">I Have Paid</button>
+  </div>
+
+  <script>
+    const serviceName = localStorage.getItem('selectedServiceName');
+    const servicePrice = localStorage.getItem('selectedServicePrice');
+    const orderLink = localStorage.getItem('orderLink');
+
+    document.getElementById('order-details').innerHTML = `
+      Service: <strong>${serviceName}</strong><br>
+      Price: <strong>₹${servicePrice}</strong><br>
+      Your Link: <a href="${orderLink}" target="_blank">${orderLink}</a>
+    `;
+
+    function confirmPayment() {
+      alert('✅ Thank you! Your payment is being verified.');
+      localStorage.clear();
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
