@@ -4,6 +4,21 @@
 
 The Remix Supabase starter demonstrates how to integrate **Supabase** into an Remix project deployed on Netlify.
 
+## Features
+
+- Remix with Vite for fast, modern web development
+- Supabase integration for authentication and database
+- Complete authentication system (login, signup, password reset)
+- Tailwind CSS v4 for styling
+- Full CRUD member management dashboard
+- Fully responsive design with mobile navigation
+- TypeScript for type safety
+- Protected routes with session management
+- Reusable UI components (buttons, forms, modals)
+- Syntax highlighting with Shiki
+- Netlify deployment ready
+- Error boundaries for robust error handling
+
 ## Deploying to Netlify
 
 If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
